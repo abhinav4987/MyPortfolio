@@ -1,0 +1,30 @@
+.category-options {
+    display: inline-block;
+    margin: 0.3rem 1rem;
+    position: relative;
+    /* padding: 0.2em 0; */
+    overflow: hidden;
+}
+
+.category-options:after {
+
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.category-options:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+.underlined {
+    border-bottom: 2px solid white;
+}
