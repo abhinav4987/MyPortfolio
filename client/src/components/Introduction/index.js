@@ -67,7 +67,7 @@ function Introduction() {
                 fontSize="display2"
                 fontWeight="medium"
                 whiteSpace="pre-wrap"
-                letterSpacing="-1.6px"
+                letterSpacing="-0.5px"
             >
                 <Box color="displayColor" as="span">
                 Software Engineer.
@@ -90,7 +90,7 @@ function Introduction() {
                 <Stack isInline spacing={1}>
                 <Box>🎓</Box>
                 <Box>
-                    Currently an Informatics Student at Universitas Negeri Surabaya.
+                    Currently a Computer Science Student at Indian Institute of Information Technology, Sricity.
                 </Box>
                 </Stack>
             </Text>
@@ -102,7 +102,7 @@ function Introduction() {
             transition={{ enter: { duration: 0.4, delay: 1.0 } }}
             >
             <Stack isInline spacing={4}>
-                <Link href="https://github.com/abdulrcs" isExternal>
+                <Link href="https://github.com/abhinav4987" isExternal>
                 <Button
                     leftIcon={<FaGithub color="#3CCF91" />}
                     position="static"
@@ -113,7 +113,7 @@ function Introduction() {
                     Github
                 </Button>
                 </Link>
-                <Link href="https://linkedin.com/in/abdulrcs" isExternal>
+                <Link href="https://www.linkedin.com/in/abhinav-anand-7b882715a/" isExternal>
                 <Button
                     leftIcon={<FaLinkedin color="#3CCF91" />}
                     position="static"
@@ -124,7 +124,7 @@ function Introduction() {
                     LinkedIn
                 </Button>
                 </Link>
-                <Link href="mailto:abdulrcs1@gmail.com" isExternal>
+                <Link href="mailto:abhinavanand4987@gmail.com" isExternal>
                 <Button
                     leftIcon={<FaEnvelope fill="#3CCF91" />}
                     transition="0.3s"

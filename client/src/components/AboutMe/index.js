@@ -14,44 +14,176 @@ import {
     PopoverBody,
     PopoverArrow,
 } from '@chakra-ui/react'
+import {
+    FaReact,
+    FaPython,
+    FaPepperHot,
+    FaJs,
+    FaSass,
+    FaCode,
+    FaGithub,
+    FaExternalLinkAlt,
+    FaLaravel,
+    FaBootstrap,
+    FaDatabase,
+    FaNodeJs,
+    FaNode,
+    FaYoutube,
+    FaChrome,
+    FaNpm,
+    FaCss3,
+    FaHtml5
+} from 'react-icons/fa'
+import {TbBrandNextjs} from 'react-icons/tb'
+import {BiGitBranch} from 'react-icons/bi';
+import { SiNextDotJs,SiMongodb, SiRollupdotjs,SiGraphql, SiRedux } from 'react-icons/si'
 import useMediaQuery from '../../hook/useMediaQuery';
 
 import React, {Fragment} from 'react'
+
+const technical_traits = [
+    "React","React Native","Redux","MongoDB","GraphQL","Next.js","REST API","HTML","CSS","Sass","Javascript","Git"
+]
+
+const non_tech_traits = [
+    "cyclist", "runner","meditator", "potter head", "bibilophile","cooking"
+] 
+
+
+const getIcon = (tag) => {
+    console.log(tag)
+        if (tag === 'React') {
+            return <FaReact/>
+        } else if (tag === 'MongoDB') {
+            return <SiMongodb/>
+        }else if (tag === 'React Native') {
+            return <FaReact/>
+        } else if (tag === 'Javascript') {
+            return <FaJs/>
+        } else if (tag === 'Sass') {
+            return <FaSass/>
+        } else if (tag === 'Express') {
+            return <FaNode/>
+        } else if (tag === 'Laravel') {
+            return <FaLaravel/>
+        } else if (tag === 'Bootstrap') {
+            return <FaBootstrap/>
+        }
+        else if (tag === 'HTML') {
+            return <FaHtml5/>
+        } else if (tag === 'SQL') {
+            return <FaDatabase/>
+        }
+        else if (tag === 'NPM') {
+            return <FaNpm/>
+        }
+        else if(tag === 'CSS'){
+            return <FaCss3 />
+        }
+        else if (tag === 'Git') {
+            return <BiGitBranch/>
+        }else if (tag === 'Redux') {
+            return <SiRedux/>
+        }
+        else if (tag === 'Rollup') {
+            return <SiRollupdotjs/>
+        }
+        else if (tag === 'Next.js') {
+            return <TbBrandNextjs/>
+        }
+        else if (tag === 'GraphQL') {
+            return <SiGraphql/>
+        }
+        else {
+            return <FaCode/>
+        }
+
+    }
 
 function Aboutme() {
     const isLargerThan800 = useMediaQuery(800)
     return (
         <Fragment>
-            <SimpleGrid columns={{base: 1, md: 2}} spacing={8} p={6}>
+            <SimpleGrid columns={{base: 1, md: 2}} spacing={8} p={2}>
                 <SlideFade
                     direction="top"
                     in={true}
                     transition={{ enter: { duration: 0.4, delay: 0.7 } }}
                 >
                     <Stack>
-                        <Heading fontFamily="Ubuntu" fontSize="21">
+                        <Heading fontFamily="Ubuntu" fontSize="34"  p={2}>
                             ⚡ About Me
                         </Heading>
                         <Text
                             color="textSecondary"
                             fontSize={{ base: '14px', md: '16px' }}
                             whiteSpace="pre-line"
+                            paddingLeft={2}
                         >
-                            Hey! I'm Abdul Rahman, I've been close to a computer since an
-                            early age, and been passionate about it ever since. <br />
-                            <br /> I really liked to build stuff using{' '}
-                            back in 2010, and from that, I explored how to code myself,
-                            fast-forward to today, I do programming in various languages and
-                            technologies, and had the privilege to worked in a{' '}
-                            and a
-                            I'm interested in building something awesome with code and
-                            automate tasks with code, currently focused on
-                            and
-                            <br />
-                            <br />
-                            When I'm not coding I play games with my friends, watch some show
-                            on Netflix, or if the weather's good, play basketball! 🏀
+                            Hey! I'm Abhinav Anand, a web and frontend developer, passionate about creating new tools on the web interface to make lives better. <br />
+                            
                         </Text>
+
+                        <Heading color="#c0c2c1" fontFamily="Ubuntu" fontSize="16"  p={2}>
+                            Technologies I have worked with.  
+                        </Heading>
+                        <Flex alignItems="center" justifyContent="flex-start" flexWrap="wrap" >
+                            {
+                                technical_traits.map(trait => {
+                                    return (
+                                        <Flex 
+                                            alignItems="center" 
+                                            justifyContent="flex-start"
+                                            paddingLeft="20px"
+                                            paddingRight="20px"
+                                            paddingTop="5px"
+                                            paddingBottom="5px"
+                                            backgroundColor="#2fbd81"
+                                            borderRadius={"100rem"}
+                                            margin="2px"
+                                        >
+                                            {getIcon(trait)}
+                                            <Text
+                                                
+                                                color="#2f3030"
+                                                fontWeight="600"
+                                                fontSize={{ base: '16px', md: '18px' }}
+                                                whiteSpace="pre-line"
+                                               
+                                                marginLeft={'10px'}
+                                            >{trait}</Text>
+                                        </Flex>
+                                        
+                                    )
+                                })
+                            }
+                        </Flex>
+
+                        <Heading color="#c0c2c1" fontFamily="Ubuntu" fontSize="16"  p={2} paddingTop={5}>
+                            My non technical side   
+                        </Heading>
+                        <Flex alignItems="center" justifyContent="flex-start" flexWrap="wrap" >
+                            {
+                                non_tech_traits.map(trait => {
+                                    return (
+                                        <Text
+                                            
+                                            borderRadius={"100rem"}
+                                            paddingLeft="20px"
+                                            paddingRight="20px"
+                                            paddingTop="5px"
+                                            paddingBottom="5px"
+                                            backgroundColor="#FA934F"
+                                            color="#2f3030"
+                                            fontWeight="600"
+                                            fontSize={{ base: '16px', md: '18px' }}
+                                            whiteSpace="pre-line"
+                                            margin="2px"
+                                        >{trait}</Text>
+                                    )
+                                })
+                            }
+                        </Flex>
                     </Stack>
                 </SlideFade>
 
@@ -80,7 +212,7 @@ function Aboutme() {
                             borderRadius="9"
                             w={{ base: '300px', lg: '300px' }}
                             h={{ base: '400px', lg: '400px' }}
-                            alt="Abdul Rahman"
+                            alt="Abhinav Anand"
                         />
                         </Box>
                     </Flex>

@@ -4,9 +4,11 @@ import { Stack, ChakraTheme, ChakraProvider } from '@chakra-ui/react';
 import Introduction from './components/Introduction';
 import Aboutme from './components/AboutMe';
 import Projects from './components/Projects'
+import Skills from './components/Skills';
 import customTheme from './style/theme';
 import { prismDarkTheme } from './style/prism';
 import { Global, css } from '@emotion/react'
+import Contact from  './components/Contact'
 const GlobalStyle = ({ children }) => {
   return (
     <Fragment>
@@ -60,6 +62,8 @@ function App() {
           <Introduction />
           <Aboutme />
           <Projects />
+          {/* <Skills /> */}
+          <Contact/>
         </Stack>
       </GlobalStyle> 
     </ChakraProvider>

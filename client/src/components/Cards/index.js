@@ -21,6 +21,7 @@ import {
     FaLaravel,
     FaBootstrap,
     FaDatabase,
+    FaYoutube
 } from 'react-icons/fa'
 import useMediaQuery from '../../hook/useMediaQuery';
 import { SiNextDotJs } from 'react-icons/si'
@@ -29,6 +30,7 @@ export default function Cards({
     title,
     desc,
     githubLink,
+    videoLink,
     deployLink,
     tag,
 }) {
@@ -125,14 +127,14 @@ export default function Cards({
                         <FaGithub aria-label="github" size={23} />
                     </Link>
                     )}
-                    {deployLink && (
+                    {videoLink && (
                     <Link
-                        href={deployLink}
+                        href={videoLink}
                         color="white"
                         
                         isExternal
                     >
-                        <FaExternalLinkAlt aria-label="project link" size={20} />
+                        <FaYoutube aria-label="project link" size={20} />
                     </Link>
                     )}
                 </Stack>

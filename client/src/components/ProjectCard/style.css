@@ -1,0 +1,17 @@
+.card-image > img {
+    border-radius: 6px 6px 0px 0px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* max-height: 300px; */
+}
+
+.card-image {
+}
+
+.card-class {
+    transition: transform 1s;
+}
+
+.card-class:hover {
+    transform: scale(1.04);
+}

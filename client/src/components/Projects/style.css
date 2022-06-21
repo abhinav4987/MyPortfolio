@@ -4,6 +4,7 @@
     position: relative;
     /* padding: 0.2em 0; */
     overflow: hidden;
+    cursor: pointer;
 }
 
 .category-options:after {
