@@ -16,7 +16,7 @@ const porjectList = [
         tags: ["React","Javascript", "NEXT.js", "GraphQL"],
         img: 'https://res.cloudinary.com/dfwfghwgo/image/upload/v1655782537/readme/Screenshot_894_pu4cgx.png',
         categories: ["React"],
-        githubLink: "https://github.com/abhinav4987/Sorting-Visualiser",
+        githubLink: "https://github.com/abhinav4987/VODIL",
         deployLink: "https://vodil.vercel.app/"
     },
      {
@@ -25,7 +25,7 @@ const porjectList = [
         tags: ["React","Javascript", "NEXT.js"],
         img: 'https://res.cloudinary.com/dfwfghwgo/image/upload/v1655782540/readme/Screenshot_897_z3ql3v.png',
         categories: ["React"],
-        githubLink: "https://github.com/abhinav4987/Sorting-Visualiser",
+        githubLink: "https://github.com/abhinav4987/twitter-clone",
         deployLink: "https://twitter-clone-git-master-abhinav4987.vercel.app/"
     },
     {
@@ -53,8 +53,7 @@ const porjectList = [
         tags: ["React","Javascript", "React native"],
         img: 'https://res.cloudinary.com/dfwfghwgo/image/upload/v1655783698/readme/Screenshot_2022-06-21-04-50-26-467_com.rnsetup_x3on6t.jpg',
         categories: ["React"],
-        githubLink: "https://github.com/abhinav4987/Sorting-Visualiser",
-        deployLink: "https://sorting-visualizer-4987.web.app"
+        githubLink: "https://github.com/abhinav4987/wordle_rush'
     },
     
     {
@@ -92,8 +91,8 @@ const porjectList = [
         tags: ["React","Javascript", 'NPM', 'Rollup'],
         img: covid,
         categories: ["React", 'NPM'],
-        githubLink: "https://github.com/abhinav4987/Covid-Tracker",
-        npmLink: "https://covid19-tracker-c80aa.web.app",
+        githubLink: "https://github.com/abhinav4987/AUROR-UI",
+        npmLink: "https://www.npmjs.com/package/aurorui",
     },
     
 ];
