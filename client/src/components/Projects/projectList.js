@@ -53,7 +53,7 @@ const porjectList = [
         tags: ["React","Javascript", "React native"],
         img: 'https://res.cloudinary.com/dfwfghwgo/image/upload/v1655783698/readme/Screenshot_2022-06-21-04-50-26-467_com.rnsetup_x3on6t.jpg',
         categories: ["React"],
-        githubLink: "https://github.com/abhinav4987/wordle_rush'
+        githubLink: "https://github.com/abhinav4987/wordle_rush"
     },
     
     {
